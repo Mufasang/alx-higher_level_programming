@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 
-
 def safe_print_integer(value):
     """
     prints a list of anything, but only prints the integers
