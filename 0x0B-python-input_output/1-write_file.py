@@ -6,12 +6,14 @@ Created on Tru Jun 3 15:13:37 2020
 """
 
 
-def number_of_lines(filename=""):
+def write_file(filename="", text=""):
     """
-    Counts the number of lines from the filename
+    Writes inputed text to a utf-8 encoded file
     Arguments:
-        filename (str): The name of the file to count in
+        filename (str): The name of the file to open
+        text (str): The text to write in
+    Return:
+        A file with text written
     """
-    with open(filename, encoding='utf-8') as file:
-        lines = file.readlines()
-    return len(lines)
+    with open(filename, 'w', encoding='utf-8') as file:
+        return file.write(text)
